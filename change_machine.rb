@@ -23,12 +23,5 @@ class Register
     if pennies > 0 
       print pennies.to_s + " pennies \n"
     end
-
-
-
- 
- end
-
-
-
+  end
 end
