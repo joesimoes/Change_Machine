@@ -5,27 +5,18 @@ class Register
   change = gets.chomp.to_i
 
   quarters = change/25 
-  dimes = change/10
-  nickels = change/5
-  pennies = change/1
-
-  remainder = change%25
-  d = remainder/10
-  n =  remainder/5
-  p = remainder/1
-  
- 
-
+  dimes = (change - (quarters*25))/10
+  nickels = (change - ((quarters*25)+(dimes*10)))/5
+  pennies = (change - ((quarters*25)+(dimes*10)+(nickels*5)))/1
  
   print quarters.to_s + " quarters \n"  
-  if remainder >= 10
-	print d.to_s + " dimes \n"
-  elsif remainder >= 5 
-	print n.to_s + " nickels\n"
-  elsif remainder >= 1
-	print p.to_s + " pennies\n"
+  print dimes.to_s + " dimes \n"
+  print nickels.to_s + " nickels \n"
+  print pennies.to_s + " pennies \n"
+
  
-  end
-  
-end
+ end
+
+
+
 
