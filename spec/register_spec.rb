@@ -7,7 +7,7 @@ describe Register do
   end
 
   it "should prompt" do 
-    STDOUT.should_receive(:puts).with("Please enter an amount of change from 0-100 cents")
+    $stdout.should_receive(:puts).with("Please enter an amount of change from 0-100 cents")
   end
 
    it "should give correct change for multiples of 25" do

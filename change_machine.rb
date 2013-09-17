@@ -1,6 +1,8 @@
 class Register
 
-
+def setup
+  $stdout = StringIO.new
+end
     puts "Please enter an amount of change from 0-100 cents"
     change = gets.chomp.to_i
 
