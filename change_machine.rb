@@ -19,9 +19,8 @@ class Register
     when nickels > 0
       print nickels.to_s + " nickels \n"
 
-
-    if pennies > 0 
+    when pennies > 0 
       print pennies.to_s + " pennies \n"
-    end
   end
 end
+
