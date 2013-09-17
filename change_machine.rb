@@ -8,15 +8,27 @@ class Register
   dimes = (change - (quarters*25))/10
   nickels = (change - ((quarters*25)+(dimes*10)))/5
   pennies = (change - ((quarters*25)+(dimes*10)+(nickels*5)))/1
- 
-  print quarters.to_s + " quarters \n"  
-  print dimes.to_s + " dimes \n"
-  print nickels.to_s + " nickels \n"
-  print pennies.to_s + " pennies \n"
+
+  case 
+    when quarters > 0
+      print quarters.to_s + " quarters \n" 
+
+    when dimes > 0 
+      print dimes.to_s + " dimes \n"
+
+    when nickels > 0
+      print nickels.to_s + " nickels \n"
+
+
+    if pennies > 0 
+      print pennies.to_s + " pennies \n"
+    end
+
+
 
  
  end
 
 
 
-
+end
