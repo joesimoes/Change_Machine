@@ -4,9 +4,12 @@ class Register
   
   change = gets.chomp.to_i
 
-  if change >= 25 
-  	print "At least 1 quarter \n" 
-  else
-  	print "Less than a quarter \n"
-  end
+  quarters = change/25 
+  dimes = change/10
+  nickels = change/5
+  pennies = change/1
+
+
+print "You get " + quarters.to_s + " quarters \n"
+
 end
