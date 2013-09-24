@@ -19,3 +19,4 @@ describe Register do
    end
 end
 
+argv should_eq()
