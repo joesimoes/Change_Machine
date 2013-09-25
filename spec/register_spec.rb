@@ -7,6 +7,7 @@ describe "Register" do
     }.should_not raise_error
   end
 
+
   it "responds to the make_change method" do
     Register.should respond_to(:make_change)
   end
