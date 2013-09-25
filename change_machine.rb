@@ -1,4 +1,4 @@
-class Register
+class ChangeMachine
 
 def setup
   $stdout = StringIO.new
